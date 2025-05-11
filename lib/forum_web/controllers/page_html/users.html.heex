@@ -1,0 +1,9 @@
+<h1 class="text-3xl font-bold underline">Users</h1>
+<ul>
+    <%= for user <- @users do %>
+    <li>
+        <span class="text-lg font-bold"><%= user.id %></span>
+        : <%= user.name %> - <%= user.email %>
+    </li>
+    <% end %>
+</ul>
