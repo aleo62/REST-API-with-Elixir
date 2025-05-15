@@ -19,7 +19,8 @@ defmodule ForumWeb.PostJSON do
     %{
       id: post.id,
       title: post.title,
-      body: post.body
+      body: post.body,
+      user_id: post.user_id
     }
   end
 end
